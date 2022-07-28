@@ -10,6 +10,9 @@ body {
   padding: 0;
   color: var(--clr-white-primary);
   font-family: var(--roboto-mono-font);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
 }
 
 img {
@@ -23,6 +26,7 @@ img {
   --clr-blue-navbar: hsl(224, 52%, 8%);
   --clr-blue-navbar-blr: hsl(224, 52%, 8%, .9);
   --clr-light-blue: hsl(191, 100%, 66%);
+  --clr-light-blue-blr: hsl(191, 100%, 66%, .2);
   --clr-gray: hsl(240, 1%, 31%);
 }
 
@@ -45,20 +49,85 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+  color: var(--clr-light-blue);
 }
 
 ul {
   list-style: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.sr-only {
+  visibility: hidden;
+}
+
+.container--button {
+  margin-top: 2.5rem;
+}
+
+.button {
+  font-size: 0.8rem;
+  border: 1px solid var(--clr-light-blue);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: var(--clr-light-blue-blr);
+}
+
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../../images/mod-umberto-FewHpO4VC9Y-unsplash.png");
+  background-image: url("../../images/mod-ipad2-umberto-FewHpO4VC9Y-unsplash.png");
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 87.5em) {
+  .hero {
+    background-image: url("../../images/mod-umberto-FewHpO4VC9Y-unsplash.png");
+  }
+}
+
+.home__container {
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+}
+@media (min-width: 48em) {
+  .home__container {
+    left: 15%;
+  }
+}
+.home__text {
+  max-width: 25ch;
+  margin-right: 1.5rem;
+  font-family: var(--raleway-font);
+}
+@media (min-width: 37em) {
+  .home__text {
+    font-size: 1.5rem;
+    max-width: 30ch;
+  }
+}
+.home__text--big {
+  font-size: 2.2rem;
+}
+@media (min-width: 37em) {
+  .home__text--big {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

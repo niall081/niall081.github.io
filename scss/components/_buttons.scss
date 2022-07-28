@@ -1,0 +1,19 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+.container--button {
+    margin-top: 2.5rem;
+}
+
+.button {
+    font-size: .8rem;
+    border: 1px solid var(--clr-light-blue);
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    
+}
+
+.button:hover {
+    background-color: var(--clr-light-blue-blr);
+    
+}
