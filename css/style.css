@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--clr-white-primary);
+  font-family: var(--roboto-mono-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-light-blue);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+:root {
+  --clr-blue-primary: hsl(225, 47%, 12%);
+  --clr-white-primary: hsl(0, 0%, 100%);
+  --clr-blue-navbar: hsl(224, 52%, 8%);
+  --clr-blue-navbar-blr: hsl(224, 52%, 8%, .9);
+  --clr-light-blue: hsl(191, 100%, 66%);
+}
+
+:root {
+  --roboto-mono-font: "Roboto Mono", monospace;
+  --raleway-font: "Raleway", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
