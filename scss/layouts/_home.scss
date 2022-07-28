@@ -1,0 +1,13 @@
+@use '../utils' as u;
+@use '../globals' as g;
+@use '../components' as c;
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/mod-umberto-FewHpO4VC9Y-unsplash.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }

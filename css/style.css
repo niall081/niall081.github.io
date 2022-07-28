@@ -12,11 +12,6 @@ body {
   font-family: var(--roboto-mono-font);
 }
 
-a {
-  text-decoration: none;
-  color: var(--clr-light-blue);
-}
-
 img {
   width: 100%;
   display: block;
@@ -28,11 +23,42 @@ img {
   --clr-blue-navbar: hsl(224, 52%, 8%);
   --clr-blue-navbar-blr: hsl(224, 52%, 8%, .9);
   --clr-light-blue: hsl(191, 100%, 66%);
+  --clr-gray: hsl(240, 1%, 31%);
 }
 
 :root {
   --roboto-mono-font: "Roboto Mono", monospace;
   --raleway-font: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/mod-umberto-FewHpO4VC9Y-unsplash.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
