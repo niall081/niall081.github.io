@@ -24,19 +24,24 @@
             class="sr-only">menu</span></button>
         <nav>
           <ul id="primary-nav" data-visible="false" class="primary-nav flex">
-            <li class="active">
+            <li class="active" data-aos="fade-down" data-aos-delay="500" data-aos-duration="600"
+            data-aos-easing="ease-in-out" data-aos-once="true">
               <a class="primary-nav__link" href="index.html">Home</a>
             </li>
-            <li class="active">
+            <li class="active" data-aos="fade-down" data-aos-delay="600" data-aos-duration="600"
+            data-aos-easing="ease-in-out" data-aos-once="true">
               <a class="primary-nav__link" href="#">About</a>
             </li>
-            <li class="active">
+            <li class="active" data-aos="fade-down" data-aos-delay="700" data-aos-duration="600"
+            data-aos-easing="ease-in-out" data-aos-once="true">
               <a class="primary-nav__link" href="#">Publications</a>
             </li>
-            <li class="active">
+            <li class="active" data-aos="fade-down" data-aos-delay="800" data-aos-duration="600"
+            data-aos-easing="ease-in-out" data-aos-once="true">
               <a class="primary-nav__link" href="#">Resume</a>
             </li>
-            <li class="active">
+            <li class="active" data-aos="fade-down" data-aos-delay="900" data-aos-duration="600"
+            data-aos-easing="ease-in-out" data-aos-once="true">
               <a class="primary-nav__link" href="#">Contact</a>
             </li>
           </ul>
@@ -45,19 +50,24 @@
 
         <div class="home__container flex">
             <div>
-              <p class="home__text">Hi, I'm</p>
-              <p class="home__text home__text--big">Niall Byrnes.</p>
-              <p class="home__text">I’m a physics researcher currently working in the
+              <p class="home__text" data-aos="fade-right"
+              data-aos-duration="700" data-aos-easing="ease-out" data-aos-once="true">Hi, I'm</p>
+              <p class="home__text home__text--big" data-aos="fade-right" data-aos-delay="300"
+              data-aos-duration="700" data-aos-easing="ease-out" data-aos-once="true">Niall Byrnes.</p>
+              <p class="home__text" data-aos="fade-right" data-aos-delay="600"
+              data-aos-duration="700" data-aos-easing="ease-out" data-aos-once="true">I’m a physics researcher currently working in the
                  <a class="link" href="http://www.mrforeman.com/" target="_blank">Optical Theory Group</a> at Imperial College London.
               </p>
               <div class="container--button">
-                <a class="button" href="about.html">Read more</a>
+                <a class="button" href="about.html" data-aos="fade-in" data-aos-delay="750"
+                data-aos-duration="700" data-aos-easing="ease-out" data-aos-once="true">Read more</a>
               </div>
               
             </div>
           </div>
 
-          <footer class="home-footer flex">
+          <footer class="home-footer flex" data-aos="fade-in" data-aos-delay="450"
+          data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">
             <div class="footer__container flex">
               <a class="footer__icon" href="https://orcid.org/0000-0002-1554-3820" target="_blank"><img src="/images/orcid-svgrepo-com.svg" alt="Orcid logo icon"></a>
               <a class="footer__icon footer__icon--small" href="https://www.researchgate.net/profile/Niall-Byrnes" target="_blank"><img src="/images/researchgate-svgrepo-com.svg" alt="Research Gate logo icon"></a>
@@ -71,7 +81,9 @@
           
     </main>
     
-    
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
