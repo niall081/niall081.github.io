@@ -18,16 +18,37 @@
 <body>
     <!--BG image by Umberto on Unsplash https://unsplash.com/@umby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText-->
     <main class="hero">
-        <nav>
+      <div class="nav-wrapper flex">
 
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"><span
+            class="sr-only">menu</span></button>
+        <nav>
+          <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+            <li class="active">
+              <a class="primary-nav__link" href="#">Home</a>
+            </li>
+            <li class="active">
+              <a class="primary-nav__link" href="#">About</a>
+            </li>
+            <li class="active">
+              <a class="primary-nav__link" href="#">Publications</a>
+            </li>
+            <li class="active">
+              <a class="primary-nav__link" href="#">Resume</a>
+            </li>
+            <li class="active">
+              <a class="primary-nav__link" href="#">Contact</a>
+            </li>
+          </ul>
         </nav>
+      </div>
 
         <div class="home__container flex">
             <div>
               <p class="home__text">Hi, I'm</p>
               <p class="home__text home__text--big">Niall Byrnes.</p>
               <p class="home__text">I’m a physics researcher currently working in the
-                 <a class="home__link" href="#">Optical Theory Group</a> at Imperial College London.
+                 <a class="link" href="#">Optical Theory Group</a> at Imperial College London.
               </p>
               <div class="container--button">
                 <a class="button" href="about.html">Read more</a>
@@ -36,7 +57,21 @@
             </div>
           </div>
 
+          <footer class="home-footer flex">
+            <div class="footer__container flex">
+              <img class="footer__icon" src="/images/orcid-svgrepo-com.svg" alt="Orcid logo icon">
+              <img class="footer__icon footer__icon--small" src="/images/researchgate-svgrepo-com.svg" alt="Research Gate logo icon">
+              <img class="footer__icon footer__icon--small" src="/images/icons8-google-scholar.svg" alt="Google Scholar logo icon">
+              <img class="footer__icon" src="/images/github-svgrepo-com.svg" alt="GitHub logo icon">
+            </div>
+            <div class="footer__container footer__container--text flex">
+              &copy;2022 Designed & Built by Gloria Mancini
+            </div>
+          </footer>
+          
     </main>
+    
+    
     
 </body>
 </html>

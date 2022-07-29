@@ -1,0 +1,54 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+
+
+
+.footer__icon {
+    width: 1.8rem;
+    transition: .2s ease-in-out 0s;
+    cursor: pointer;
+
+    @include u.breakpoint(medium){
+        width: 2.1rem;
+    }
+    
+    &--small {
+        width: 2rem;
+        @include u.breakpoint(medium){
+            width: 2.7rem;
+        }
+    }
+}
+
+.footer__icon:hover {
+    transform: scale(1.15) translateY(-.125em);
+}
+
+.home-footer {
+    justify-content: center;
+
+    
+}
+
+.footer__container {
+    position: fixed;
+    text-align: center;
+    top: 92%;
+    gap: 1rem;
+
+    &--text {
+        font-family: var(--raleway-font);
+        letter-spacing: 2px;
+        font-size: .8rem;
+        top: 97%;
+
+        @include u.breakpoint(medium){
+            font-size: 1.0123rem;
+        }
+    }
+
+    &--text:hover {
+        color: var(--clr-light-blue);
+    }
+}
