@@ -93,7 +93,7 @@ ul {
 
 .primary-nav {
   gap: 3rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 @media (max-width: 37.9375em) {
   .primary-nav {
@@ -105,6 +105,10 @@ ul {
     background-color: var(--clr-blue-navbar);
     transform: translateX(100%);
   }
+}
+
+.primary-nav:last-child {
+  padding-right: 2.5rem;
 }
 
 @media (max-width: 37.9375em) {
@@ -120,7 +124,8 @@ ul {
 }
 @media (max-width: 37.9375em) {
   .primary-nav__link {
-    margin-left: 3rem;
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
   }
 }
 
