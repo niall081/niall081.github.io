@@ -212,7 +212,7 @@ ul {
 }
 @media (min-width: 37em) {
   .footer__icon--small {
-    width: 2.7rem;
+    width: 2.9rem;
   }
 }
 
@@ -226,12 +226,14 @@ ul {
 
 .footer__container {
   position: fixed;
+  align-items: center;
   text-align: center;
   top: 92%;
   gap: 1rem;
 }
 .footer__container--text {
   font-family: var(--raleway-font);
+  color: var(--clr-white-primary);
   letter-spacing: 2px;
   font-size: 0.8rem;
   top: 97%;

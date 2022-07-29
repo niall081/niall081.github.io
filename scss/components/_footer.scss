@@ -16,7 +16,7 @@
     &--small {
         width: 2rem;
         @include u.breakpoint(medium){
-            width: 2.7rem;
+            width: 2.9rem;
         }
     }
 }
@@ -33,12 +33,14 @@
 
 .footer__container {
     position: fixed;
+    align-items: center;
     text-align: center;
     top: 92%;
     gap: 1rem;
 
     &--text {
         font-family: var(--raleway-font);
+        color: var(--clr-white-primary);
         letter-spacing: 2px;
         font-size: .8rem;
         top: 97%;
