@@ -1,0 +1,96 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+
+.nav-wrapper {
+    background-color: var(--clr-blue-navbar);
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1.3rem 3rem;
+    z-index: 998;  
+    position: fixed;
+
+    @include u.breakpoint-down(large) {
+        justify-content: center;
+    }
+
+    @include u.breakpoint-down(small) {
+        padding: 2.1rem 3rem;
+        
+    }
+
+}
+
+.primary-nav {
+    gap: 3rem;
+    font-size: 1rem;
+    
+    @include u.breakpoint-down(small) {
+        z-index: 1000;
+        position: fixed;
+        inset: 0 0 0 0%;
+        flex-direction: column;
+        padding: 10rem 3rem;
+        background-color: var(--clr-blue-navbar);
+        transform: translateX(100%);
+        
+    }
+}
+
+.primary-nav:last-child {
+    padding-right: 2.5rem;
+}
+
+
+
+.primary-nav[data-visible="true"] {
+    @include u.breakpoint-down(small) {
+        transform: translateX(0%);
+        transition: transform 120ms ease-out;
+    }
+}
+
+.primary-nav__link {
+    position: relative;
+    color: var(--clr-white-primary);
+
+    @include u.breakpoint-down(small) {
+        margin-left: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+.primary-nav__link:hover {
+    color: var(--clr-light-blue);
+}
+
+
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.mobile-nav-toggle {
+    
+    @include u.breakpoint-down(small) {
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: url(../../images/icons8-menu.svg);
+        background-repeat: no-repeat;
+        border: none;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 1.2rem;
+        right: 2.5rem;
+    }    
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+    @include u.breakpoint-down(small) {
+        background-image: url(../../images/icons8-close.svg); 
+    } 
+}

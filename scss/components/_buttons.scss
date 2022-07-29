@@ -1,0 +1,45 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+.container--button {
+    margin-top: 2.5rem;
+}
+
+.button {
+    font-size: .8rem;
+    border: 1px solid var(--clr-light-blue);
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    color: var(--clr-light-blue);
+    
+}
+
+.button:hover {
+    background-color: var(--clr-light-blue-blr);
+    
+}
+
+.link {
+    color: var(--clr-light-blue);
+    position: relative;
+}
+
+
+
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    background: var(--clr-light-blue);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-in-out;
+}
+
+.link:hover::after {
+    transform: scaleX(1) 
+}
