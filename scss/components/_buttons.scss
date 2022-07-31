@@ -11,6 +11,16 @@
     padding: .7rem 1rem;
     border-radius: 5px;
     color: var(--clr-light-blue);
+
+    @include u.breakpoint-down-height(small){
+        font-size: .7rem;
+        padding: .4rem .6rem;
+     }
+
+    // @include u.breakpoint-down-height(small){
+    //     padding: .4rem .7rem;
+    //     color: red;
+    // }
     
 }
 
