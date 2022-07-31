@@ -10,6 +10,8 @@
     background-position: center;
     position: relative;
     overflow: hidden;
+    
+   
 
     @include u.breakpoint(xlarge) {
         background-image: url('../../images/mod-umberto-FewHpO4VC9Y-unsplash.png');  
@@ -28,10 +30,11 @@
         left: 15%;
     }
 
-    @include u.breakpoint(xlarge) {
-        
-        
-    }
+    @include u.breakpoint-down-height(small){
+        height: 85%;
+        margin-top: 3rem;
+     }
+
     
 }
 
@@ -44,6 +47,10 @@
         font-size: 1.5rem;
         max-width: 30ch;
     }
+
+    @include u.breakpoint-down-height(small){
+        font-size: 1.2rem;
+     }
     
 
     &--big {
@@ -52,6 +59,12 @@
         @include u.breakpoint(medium) {
         font-size: 3rem;
         }
+
+        @include u.breakpoint-down-height(small){
+            font-size: 2rem;
+         }
+
+        
     }
 }
 

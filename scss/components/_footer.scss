@@ -12,12 +12,20 @@
     @include u.breakpoint(medium){
         width: 2.1rem;
     }
+
+    @include u.breakpoint-down-height(medium){
+        width: 1.6rem; 
+    }
     
     &--small {
         width: 2rem;
         @include u.breakpoint(medium){
             width: 2.9rem;
         }
+        @include u.breakpoint-down-height(medium){
+            width: 1.9rem; 
+        }
+        
     }
 }
 
@@ -35,19 +43,31 @@
     position: fixed;
     align-items: center;
     text-align: center;
-    top: 92%;
+    bottom: 5%;
     gap: 1rem;
+
+    @include u.breakpoint-down-height(large){
+       bottom: 7%;
+    }
+
+    
 
     &--text {
         font-family: var(--raleway-font);
         color: var(--clr-white-primary);
         letter-spacing: 2px;
         font-size: .8rem;
-        top: 97%;
+        bottom: 2%;
 
         @include u.breakpoint(medium){
             font-size: 1.0123rem;
         }
+
+        @include u.breakpoint-down-height(small){
+            font-size: .7rem;
+         }
+
+       
     }
 
     &--text:hover {
