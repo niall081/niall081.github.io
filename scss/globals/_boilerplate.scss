@@ -14,10 +14,11 @@ body {
     margin: 0;
     padding: 0;
     color: var(--clr-white-primary);
-    font-family: var(--roboto-mono-font);
-    font-size: 1.2rem;
+    font-family: var(--open-sans-font);
     line-height: 1.5;
     letter-spacing: .9px;
+    background-color: var(--clr-blue-primary);
+    position: relative;
 }
 
 a {

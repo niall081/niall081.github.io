@@ -1,0 +1,29 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+.resume {
+    margin-left: 1.5rem; 
+    margin-right: 1.5rem;
+
+
+    &__text-wrapper {
+        width: 100%;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    @include u.breakpoint(large) {
+        margin: 0 auto;
+        padding: 7rem 3rem 0 3rem;
+       
+    }
+}
+
+.timeline-container {
+    border-left: 2px solid var(--clr-white-primary-blr);
+}
+
+
+
+

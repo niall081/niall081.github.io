@@ -1,8 +1,10 @@
 @use '../utils' as u;
 @use '../globals' as g;
 
-.container--button {
+.container-button {
     margin-top: 2.5rem;
+
+    
 }
 
 .button {
@@ -15,13 +17,13 @@
     @include u.breakpoint-down-height(small){
         font-size: .7rem;
         padding: .4rem .6rem;
+    }
+
+    &--resume {
+        align-self: flex-end;
+        padding: .35rem .55rem;
      }
 
-    // @include u.breakpoint-down-height(small){
-    //     padding: .4rem .7rem;
-    //     color: red;
-    // }
-    
 }
 
 .button:hover {
@@ -32,12 +34,14 @@
 .link {
     color: var(--clr-light-blue);
     position: relative;
+    
 }
 
 
 
 
 .link::after {
+    @include u.breakpoint(large){
     content: '';
     position: absolute;
     bottom: -2px;
@@ -48,8 +52,22 @@
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.25s ease-in-out;
+    }
 }
 
 .link:hover::after {
     transform: scaleX(1) 
+}
+
+
+
+//temporarily disabled
+.button-disabled {
+    color: var(--clr-white-primary-blr);
+    border: 1px solid var(--clr-white-primary-blr);
+}
+
+.button-disabled:hover {
+    background-color: var(--clr-blue-primary);
+  
 }

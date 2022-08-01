@@ -10,6 +10,8 @@
     padding: 1.3rem 3rem;
     z-index: 998;  
     position: fixed;
+    top: 0;
+    
 
     @include u.breakpoint-down(large) {
         justify-content: center;
@@ -20,9 +22,15 @@
         
     }
 
+    &--mod {
+        background-color: var(--clr-blue-navbar-blr);
+        
+    }
+
 }
 
 .primary-nav {
+    font-family: var(--roboto-mono-font);
     gap: 3rem;
     font-size: 1rem;
     
