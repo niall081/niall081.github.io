@@ -7,7 +7,17 @@
 
     @include u.breakpoint(large) {
         max-width: 63.625rem;
-        
+       
+    }
+
+    &--mod {
+        margin-left: 1.5rem; 
+        margin-right: 1.5rem;
+
+        @include u.breakpoint(large) {
+            margin: 0 auto;
+            padding: 7rem 3rem 0 3rem;
+        } 
     }
    
     &__block {
@@ -52,7 +62,12 @@
         max-width: 65ch;
         font-size: 1.2rem;
         }
+
+        &--about {
+            margin: 1rem 0 2rem 0;
+        }
     }
+
 
     &__text--date {
         font-size: 1rem;
