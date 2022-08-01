@@ -226,6 +226,15 @@ ul {
   transform: scaleX(1);
 }
 
+.button-disabled {
+  color: var(--clr-white-primary-blr);
+  border: 1px solid var(--clr-white-primary-blr);
+}
+
+.button-disabled:hover {
+  background-color: var(--clr-blue-primary);
+}
+
 .footer__icon {
   width: 1.8rem;
   transition: 0.2s ease-in-out 0s;

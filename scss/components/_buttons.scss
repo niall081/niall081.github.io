@@ -60,3 +60,14 @@
 }
 
 
+//temporarily disabled
+.button-disabled {
+    color: var(--clr-white-primary-blr);
+    border: 1px solid var(--clr-white-primary-blr);
+
+}
+
+.button-disabled:hover {
+    background-color: var(--clr-blue-primary);
+    
+}
