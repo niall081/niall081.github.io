@@ -323,13 +323,22 @@ ul {
 }
 
 .section {
-  max-width: 65.625rem;
-  margin: 0 auto;
-  margin-top: 7rem;
+  padding-top: 7rem;
+}
+@media (min-width: 48em) {
+  .section {
+    max-width: 63.625rem;
+  }
 }
 .section__block {
   margin-bottom: 1.9rem;
   padding-left: 0.7rem;
+}
+@media (min-width: 48em) {
+  .section__block {
+    margin-bottom: 2.2rem;
+    padding-left: 1.7rem;
+  }
 }
 .section__title {
   font-weight: 700;
@@ -348,13 +357,30 @@ ul {
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
+@media (min-width: 48em) {
+  .section__title--secondary {
+    font-size: 2.4rem;
+    margin-top: 3.5rem;
+  }
+}
 .section__text {
   padding: 0.5rem 0;
   line-height: 1.7;
 }
+@media (min-width: 48em) {
+  .section__text {
+    max-width: 65ch;
+    font-size: 1.2rem;
+  }
+}
 .section__text--date {
   font-size: 1rem;
   font-family: var(--roboto-mono-font);
+}
+@media (min-width: 48em) {
+  .section__text--date {
+    font-size: 1.5rem;
+  }
 }
 .section__text--first {
   padding-top: 0;
@@ -443,6 +469,12 @@ ul {
   gap: 1.5rem;
   margin-top: 2rem;
   align-items: center;
+}
+@media (min-width: 48em) {
+  .resume {
+    margin: 0 auto;
+    padding: 7rem 3rem 0 3rem;
+  }
 }
 
 .timeline-container {
