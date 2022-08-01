@@ -1,0 +1,22 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+.resume {
+    margin-left: 1.5rem; 
+    margin-right: 1.5rem;
+
+    &__text-wrapper {
+        width: 100%;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+}
+
+.timeline-container {
+    border-left: 2px solid var(--clr-white-primary-blr);
+}
+
+
+
+

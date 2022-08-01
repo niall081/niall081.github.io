@@ -13,10 +13,11 @@ body {
   margin: 0;
   padding: 0;
   color: var(--clr-white-primary);
-  font-family: var(--roboto-mono-font);
-  font-size: 1.2rem;
+  font-family: var(--open-sans-font);
   line-height: 1.5;
   letter-spacing: 0.9px;
+  background-color: var(--clr-blue-primary);
+  position: relative;
 }
 
 a {
@@ -30,7 +31,8 @@ img {
 
 :root {
   --clr-blue-primary: hsl(225, 47%, 12%);
-  --clr-white-primary: hsl(0, 0%, 100%);
+  --clr-white-primary: hsl(202, 44%, 92%);
+  --clr-white-primary-blr: hsl(205, 51%, 93%, .5);
   --clr-blue-navbar: hsl(224, 52%, 8%);
   --clr-blue-navbar-blr: hsl(224, 52%, 8%, .9);
   --clr-light-blue: hsl(191, 100%, 66%);
@@ -41,6 +43,7 @@ img {
 :root {
   --roboto-mono-font: "Roboto Mono", monospace;
   --raleway-font: "Raleway", sans-serif;
+  --open-sans-font: "Open Sans", sans-serif;
 }
 
 h1,
@@ -51,6 +54,11 @@ a,
 ul,
 li {
   margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
 }
 
 a,
@@ -83,6 +91,7 @@ ul {
   padding: 1.3rem 3rem;
   z-index: 998;
   position: fixed;
+  top: 0;
 }
 @media (max-width: 87.4375em) {
   .nav-wrapper {
@@ -94,8 +103,12 @@ ul {
     padding: 2.1rem 3rem;
   }
 }
+.nav-wrapper--mod {
+  background-color: var(--clr-blue-navbar-blr);
+}
 
 .primary-nav {
+  font-family: var(--roboto-mono-font);
   gap: 3rem;
   font-size: 1rem;
 }
@@ -163,7 +176,7 @@ ul {
   }
 }
 
-.container--button {
+.container-button {
   margin-top: 2.5rem;
 }
 
@@ -180,6 +193,10 @@ ul {
     padding: 0.4rem 0.6rem;
   }
 }
+.button--resume {
+  align-self: flex-end;
+  padding: 0.35rem 0.55rem;
+}
 
 .button:hover {
   background-color: var(--clr-light-blue-blr);
@@ -190,17 +207,19 @@ ul {
   position: relative;
 }
 
-.link::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  width: 100%;
-  left: 0;
-  height: 1px;
-  background: var(--clr-light-blue);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease-in-out;
+@media (min-width: 48em) {
+  .link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    background: var(--clr-light-blue);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-in-out;
+  }
 }
 
 .link:hover::after {
@@ -240,15 +259,22 @@ ul {
   transform: scale(1.15) translateY(-0.125em);
 }
 
-.home-footer {
+.footer {
   justify-content: center;
+}
+.footer__container--home {
+  position: fixed;
+  bottom: 5%;
+}
+.footer--section {
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0 0.8rem 0;
 }
 
 .footer__container {
-  position: fixed;
   align-items: center;
   text-align: center;
-  bottom: 5%;
   gap: 1rem;
 }
 @media (max-height: 50em) {
@@ -261,7 +287,7 @@ ul {
   color: var(--clr-white-primary);
   letter-spacing: 2px;
   font-size: 0.8rem;
-  bottom: 2%;
+  bottom: 1.5%;
 }
 @media (min-width: 37em) {
   .footer__container--text {
@@ -275,6 +301,69 @@ ul {
 }
 .footer__container--text:hover {
   color: var(--clr-light-blue);
+}
+.footer__container--section {
+  margin-bottom: 0.5rem;
+}
+.footer__container--section::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: var(--clr-white-primary-blr);
+}
+@media (max-width: 48.9375em) {
+  .footer__container--section::after {
+    width: 250px;
+  }
+}
+
+.section {
+  max-width: 65.625rem;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+.section__block {
+  margin-bottom: 1.9rem;
+  padding-left: 0.7rem;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+@media (min-width: 48em) {
+  .section__title {
+    font-size: 5rem;
+    letter-spacing: 2px;
+  }
+}
+.section__title--secondary {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+.section__text {
+  padding: 0.5rem 0;
+  line-height: 1.7;
+}
+.section__text--date {
+  font-size: 1rem;
+  font-family: var(--roboto-mono-font);
+}
+.section__text--first {
+  padding-top: 0;
+}
+.section__list {
+  padding-left: 0;
+}
+.section__list > li {
+  padding: 0.3rem;
 }
 
 .hero {
@@ -343,6 +432,21 @@ ul {
 
 .home__link {
   color: var(--clr-light-blue);
+}
+
+.resume {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.resume__text-wrapper {
+  width: 100%;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.timeline-container {
+  border-left: 2px solid var(--clr-white-primary-blr);
 }
 
 /*# sourceMappingURL=style.css.map */
