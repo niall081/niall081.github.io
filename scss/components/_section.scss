@@ -84,6 +84,10 @@
 
     &__list {
         padding-left: 0;
+
+        &--pub>li {
+           font-family: var(--raleway-font);
+        }
     }
 
     &__list>li {
@@ -91,6 +95,23 @@
     }
 
 
+}
+
+.list-title {
+    font-family: var(--raleway-font);
+    font-size: 1.7rem;
+    margin: 2.5rem 0 .8rem 0;
+}
+
+.list-number,
+.list-number--big {
+    font-family: var(--roboto-mono-font);
+
+    &--big {
+        font-size: 1.5rem;
+        color: var(--clr-light-blue);
+    }
+   
 }
 
 

@@ -1,0 +1,62 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+.row {
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    max-width: 52rem;
+    // margin-top: 3rem;
+    // margin-bottom: 10rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--clr-white-primary-blr);
+
+    @include u.breakpoint-down(medium) {
+        
+    }
+
+    &__img {
+        max-width: 8rem;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    &__icon:hover,
+    &__icon:focus {
+        color: var(--clr-light-blue)
+    }
+
+    &__text--title {
+        font-family: var(--raleway-font);
+        font-size: 1.3rem;
+        
+    }
+
+    &__poster {
+        max-width: 20rem;
+    }
+
+    &--mod {
+        align-items: flex-start;
+        
+        border: none;
+    }
+}
+
+.icon-container {
+    text-align: end;
+    margin-top: 1rem;
+}
+
+
+#journal-articles {
+    padding-top: 2.5rem;
+}
+
+#posters {
+    padding-top: 5rem;
+}
+

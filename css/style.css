@@ -419,8 +419,27 @@ ul {
 .section__list {
   padding-left: 0;
 }
+.section__list--pub > li {
+  font-family: var(--raleway-font);
+}
 .section__list > li {
   padding: 0.3rem;
+}
+
+.list-title {
+  font-family: var(--raleway-font);
+  font-size: 1.7rem;
+  margin: 2.5rem 0 0.8rem 0;
+}
+
+.list-number,
+.list-number--big {
+  font-family: var(--roboto-mono-font);
+}
+.list-number--big,
+.list-number--big--big {
+  font-size: 1.5rem;
+  color: var(--clr-light-blue);
 }
 
 .hero {
@@ -500,6 +519,49 @@ ul {
 
 .timeline-container {
   border-left: 2px solid var(--clr-white-primary-blr);
+}
+
+.row {
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  max-width: 52rem;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--clr-white-primary-blr);
+}
+.row__img {
+  max-width: 8rem;
+}
+.row__icon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.row__icon:hover, .row__icon:focus {
+  color: var(--clr-light-blue);
+}
+.row__text--title {
+  font-family: var(--raleway-font);
+  font-size: 1.3rem;
+}
+.row__poster {
+  max-width: 20rem;
+}
+.row--mod {
+  align-items: flex-start;
+  border: none;
+}
+
+.icon-container {
+  text-align: end;
+  margin-top: 1rem;
+}
+
+#journal-articles {
+  padding-top: 2.5rem;
+}
+
+#posters {
+  padding-top: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
