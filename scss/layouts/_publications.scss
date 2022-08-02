@@ -4,9 +4,8 @@
 .row {
     grid-auto-flow: column;
     gap: 1.5rem;
-    max-width: 52rem;
-    // margin-top: 3rem;
-    // margin-bottom: 10rem;
+    max-width: 50rem;
+    margin-top: 3rem;
     align-items: center;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--clr-white-primary-blr);
@@ -17,11 +16,22 @@
 
     &__img {
         max-width: 8rem;
+        
+
+        @include u.breakpoint-down(medium) {
+            display: none;
+        }
+    
     }
+
+
 
     &__icon {
         font-size: 2.5rem;
         margin-right: 1rem;
+        @include u.breakpoint-down(small){
+            font-size: 1.8rem;
+        }
     }
 
     &__icon:hover,
@@ -32,11 +42,26 @@
     &__text--title {
         font-family: var(--raleway-font);
         font-size: 1.3rem;
+
+        @include u.breakpoint-down(small){
+            font-size: 1rem;
+        }
         
+    }
+
+    &__text{
+        @include u.breakpoint-down(small){
+            font-size: .7rem;
+        } 
     }
 
     &__poster {
         max-width: 20rem;
+        background-color: #ffffff;
+
+        // @include u.breakpoint-down(small){
+        //     display: none;
+        // }
     }
 
     &--mod {
@@ -46,11 +71,25 @@
     }
 }
 
+.icons-container {
+    @include u.breakpoint-down(small){
+        display: flex;
+        flex-direction: column;
+        gap: .8rem
+    }
+}
+
 .icon-container {
     text-align: end;
     margin-top: 1rem;
 }
 
+
+#publications-title {
+    @include u.breakpoint-down(small){
+        font-size: 2.4rem;
+    }
+}
 
 #journal-articles {
     padding-top: 2.5rem;
@@ -59,4 +98,5 @@
 #posters {
     padding-top: 5rem;
 }
+
 

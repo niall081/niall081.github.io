@@ -1,0 +1,38 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+.sidebar {
+    @include u.breakpoint(xlarge) {
+    position: fixed;
+    right: 13%;
+    top: 18.5rem;
+    font-size: 1rem;
+    }
+
+    &__title {
+        font-family: var(--raleway-font);
+        font-size: 1.3rem;
+        margin: 2.5rem 0 .8rem 0;
+    }
+
+    &__list {
+        font-family: var(--raleway-font);
+        font-size: .9rem;
+        padding-left: 0;
+    }
+
+    &__list>li {
+        margin-top: .5rem;
+    }
+}
+
+.list-number,
+.list-number--big {
+    font-family: var(--roboto-mono-font);
+
+    &--big {
+        font-size: 1.5rem;
+        color: var(--clr-light-blue);
+    }
+   
+}
