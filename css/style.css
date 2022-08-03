@@ -555,6 +555,7 @@ ul {
 }
 .row__img {
   max-width: 8rem;
+  box-shadow: var(--clr-white-primary-blr) 6px 6px 2.5px;
 }
 @media (max-width: 48.9375em) {
   .row__img {
@@ -562,7 +563,7 @@ ul {
   }
 }
 .row__icon {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-right: 1rem;
 }
 @media (max-width: 37.9375em) {
@@ -590,6 +591,7 @@ ul {
 .row__poster {
   max-width: 20rem;
   background-color: #ffffff;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .row--mod {
   align-items: flex-start;
@@ -623,78 +625,103 @@ ul {
   padding-top: 5rem;
 }
 
-.contact__title-container {
-  max-width: 75%;
-  margin: 0 auto;
+@media (max-width: 48.9375em) {
+  #contact {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.contact {
+  justify-content: center;
+  align-items: center;
+}
+.contact__box {
+  width: 60rem;
+  margin: 80px 50px;
+  flex-wrap: wrap;
 }
 @media (max-width: 48.9375em) {
-  .contact__title-container {
-    max-width: 90%;
+  .contact__box {
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
   }
 }
-@media (max-width: 37.9375em) {
-  .contact__title-container {
-    max-width: 97%;
-  }
-}
-.contact__container {
-  margin: 0 auto;
-  margin-top: 2rem;
-  width: 75%;
-  border: 1px solid var(--clr-light-blue);
-  padding: 4.5rem 2.5rem 3rem 2.5rem;
+.contact-wrapper__links, .contact-wrapper__form {
+  width: 50%;
+  padding: 2rem 1rem 1.5rem 1rem;
 }
 @media (max-width: 48.9375em) {
-  .contact__container {
-    padding: 3rem 1.5rem 2rem 1.5rem;
-    width: 90%;
+  .contact-wrapper__links, .contact-wrapper__form {
+    width: 95%;
+    padding: 1rem;
   }
 }
-@media (max-width: 37.9375em) {
-  .contact__container {
-    max-width: 100%;
-    border: none;
-    padding: 0;
+@media (max-width: 48.9375em) {
+  .contact-wrapper__form {
+    max-width: 30rem;
   }
+}
+.contact-wrapper__links {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: hsl(227deg, 41%, 19%);
+  background: radial-gradient(circle at 58% 97%, hsl(225deg, 47%, 12%) 0 15%, transparent 15.2%), radial-gradient(circle at 12% 10%, hsl(227deg, 41%, 19%) 0 17%, transparent 17.2%), radial-gradient(circle at 12% 10%, hsl(199deg, 64%, 37%) 0 40%, transparent 40.2%), radial-gradient(circle at 20% max(78%, 350px), hsl(225deg, 47%, 12%) 0 7%, transparent 7.2%), hsl(227deg, 41%, 19%);
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 48.9375em) {
+  .contact-wrapper__links {
+    display: none;
+  }
+}
+.contact__links {
+  padding-top: 1rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact__icon {
+  width: 3rem;
+}
+.contact__icon--small {
+  width: 4rem;
+}
+.contact__icon:hover {
+  transform: scale(1.15) translateY(-0.115em);
 }
 .contact__form {
-  margin: 0 auto;
-  max-width: 90%;
   flex-direction: column;
   gap: 2rem;
-}
-@media (max-width: 37.9375em) {
-  .contact__form {
-    max-width: 100%;
-  }
 }
 
 .contact__form > input,
 textarea {
   font-family: var(--open-sans-font);
   font-size: 1rem;
-  border: none;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 1rem 0.7rem;
-  box-shadow: hsl(191deg, 100%, 66%) 3px 3px;
-}
-@media (max-width: 37.9375em) {
-  .contact__form > input,
-textarea {
-    padding: 0.8rem 0.5rem;
-  }
-}
-
-.contact__form > textarea {
-  height: 200px;
+  padding: 0.7rem 0.9rem;
+  width: 100%;
+  border: 2px solid var(--clr-light-blue);
+  outline: none;
+  background-color: var(--clr-blue);
+  color: #ffffff;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
-  border: 2px solid rgb(165, 99, 246);
-  z-index: 9999;
+  background-color: #ffffff;
+  color: var(--clr-blue-navbar);
+}
+
+.contact__form > input {
+  border-radius: 50px;
+}
+
+.contact__form > textarea {
+  height: 200px;
+  border-radius: 10px;
 }
 
 .container__link--contact {
@@ -717,6 +744,16 @@ textarea:focus {
 }
 .link--contact:hover {
   background-color: var(--clr-light-blue-blr);
+}
+
+.footer--contact {
+  margin-bottom: 0;
+  display: none;
+}
+@media (max-width: 48.9375em) {
+  .footer--contact {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

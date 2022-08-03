@@ -17,6 +17,8 @@
     &__img {
         max-width: 8rem;
         
+        // box-shadow: hsl(191, 100%, 66%) -8px 6px;
+        box-shadow: var(--clr-white-primary-blr) 6px 6px 2.5px;
 
         @include u.breakpoint-down(medium) {
             display: none;
@@ -27,7 +29,7 @@
 
 
     &__icon {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         margin-right: 1rem;
         @include u.breakpoint-down(small){
             font-size: 1.8rem;
@@ -58,6 +60,8 @@
     &__poster {
         max-width: 20rem;
         background-color: #ffffff;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        
 
         // @include u.breakpoint-down(small){
         //     display: none;
