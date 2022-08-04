@@ -88,6 +88,20 @@
     margin-top: 1rem;
 }
 
+.anchor-icon {
+    color: var(--clr-white-primary);
+
+    &> i {
+        transition: .2s ease-in-out 0s;
+    }
+
+    &> i:hover {
+        transform: scale(1.11) translateY(-.12em);
+    }
+}
+
+
+
 
 #publications-title {
     @include u.breakpoint-down(small){

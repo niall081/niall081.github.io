@@ -150,6 +150,10 @@ ul {
   color: var(--clr-light-blue);
 }
 
+.primary-nav__link:is(:link, :active, :visited).active {
+  color: var(--clr-light-blue);
+}
+
 .mobile-nav-toggle {
   display: none;
 }
@@ -611,6 +615,16 @@ ul {
   margin-top: 1rem;
 }
 
+.anchor-icon {
+  color: var(--clr-white-primary);
+}
+.anchor-icon > i {
+  transition: 0.2s ease-in-out 0s;
+}
+.anchor-icon > i:hover {
+  transform: scale(1.11) translateY(-0.12em);
+}
+
 @media (max-width: 37.9375em) {
   #publications-title {
     font-size: 2.4rem;
@@ -669,7 +683,7 @@ ul {
   justify-content: center;
   text-align: center;
   background-color: hsl(227deg, 41%, 19%);
-  background: radial-gradient(circle at 58% 97%, hsl(225deg, 47%, 12%) 0 15%, transparent 15.2%), radial-gradient(circle at 12% 10%, hsl(227deg, 41%, 19%) 0 17%, transparent 17.2%), radial-gradient(circle at 12% 10%, hsl(199deg, 64%, 37%) 0 40%, transparent 40.2%), radial-gradient(circle at 20% max(78%, 350px), hsl(225deg, 47%, 12%) 0 7%, transparent 7.2%), hsl(227deg, 41%, 19%);
+  background: radial-gradient(circle at 58% 97%, hsl(225deg, 47%, 12%) 0 15%, transparent 15.4%), radial-gradient(circle at 12% 10%, hsl(227deg, 41%, 19%) 0 17%, transparent 17.4%), radial-gradient(circle at 12% 10%, hsl(199deg, 64%, 37%) 0 40%, transparent 40.2%), radial-gradient(circle at 20% max(78%, 350px), hsl(225deg, 47%, 12%) 0 7%, transparent 7.3%), hsl(227deg, 41%, 19%);
   border-radius: 10px 0 0 10px;
 }
 @media (max-width: 48.9375em) {
