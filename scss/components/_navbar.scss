@@ -74,6 +74,9 @@
     color: var(--clr-light-blue);
 }
 
+.primary-nav__link:is(:link, :active, :visited).active {
+    color: var(--clr-light-blue)
+}
 
 
 .mobile-nav-toggle {

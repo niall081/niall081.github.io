@@ -1,0 +1,120 @@
+@use '../utils' as u;
+@use '../globals' as g;
+
+.row {
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    max-width: 50rem;
+    margin-top: 3rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--clr-white-primary-blr);
+
+    @include u.breakpoint-down(medium) {
+        
+    }
+
+    &__img {
+        max-width: 8rem;
+        
+        // box-shadow: hsl(191, 100%, 66%) -8px 6px;
+        box-shadow: var(--clr-white-primary-blr) 6px 6px 2.5px;
+
+        @include u.breakpoint-down(medium) {
+            display: none;
+        }
+    
+    }
+
+
+
+    &__icon {
+        font-size: 2.7rem;
+        margin-right: 1rem;
+        @include u.breakpoint-down(small){
+            font-size: 1.8rem;
+        }
+    }
+
+    &__icon:hover,
+    &__icon:focus {
+        color: var(--clr-light-blue)
+    }
+
+    &__text--title {
+        font-family: var(--raleway-font);
+        font-size: 1.3rem;
+
+        @include u.breakpoint-down(small){
+            font-size: 1rem;
+        }
+        
+    }
+
+    &__text{
+        @include u.breakpoint-down(small){
+            font-size: .7rem;
+        } 
+    }
+
+    &__poster {
+        max-width: 20rem;
+        background-color: #ffffff;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        
+
+        // @include u.breakpoint-down(small){
+        //     display: none;
+        // }
+    }
+
+    &--mod {
+        align-items: flex-start;
+        
+        border: none;
+    }
+}
+
+.icons-container {
+    @include u.breakpoint-down(small){
+        display: flex;
+        flex-direction: column;
+        gap: .8rem
+    }
+}
+
+.icon-container {
+    text-align: end;
+    margin-top: 1rem;
+}
+
+.anchor-icon {
+    color: var(--clr-white-primary);
+
+    &> i {
+        transition: .2s ease-in-out 0s;
+    }
+
+    &> i:hover {
+        transform: scale(1.11) translateY(-.12em);
+    }
+}
+
+
+
+
+#publications-title {
+    @include u.breakpoint-down(small){
+        font-size: 2.4rem;
+    }
+}
+
+#journal-articles {
+    padding-top: 2.5rem;
+}
+
+#posters {
+    padding-top: 5rem;
+}
+
+

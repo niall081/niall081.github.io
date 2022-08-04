@@ -1,6 +1,8 @@
 const primaryNav = document.querySelector('.primary-nav');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const navLinks = document.querySelectorAll('.primary-nav__link');
+const activePage = window.location.pathname;
+
 
 
 
@@ -23,4 +25,9 @@ navLinks.forEach(element => {
         primaryNav.setAttribute('data-visible', false)
         navToggle.setAttribute('aria-expanded', false) 
     })
+
+    if(element.href.includes(`${activePage}`)) {
+        element.classList.add('active')
+    }
 })
+
