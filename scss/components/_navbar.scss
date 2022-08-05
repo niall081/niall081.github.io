@@ -74,8 +74,12 @@
     color: var(--clr-light-blue);
 }
 
-.primary-nav__link:is(:link, :active, :visited).active {
+.active {
     color: var(--clr-light-blue)
+}
+
+.not-active {
+    color: var(--clr-white-primary);
 }
 
 
