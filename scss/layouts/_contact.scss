@@ -49,23 +49,23 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: hsl(227, 41%, 19%);
+        background-color: var( --clr-blue-200);
         background:
           radial-gradient(
-            circle at 58% 97%, hsl(225, 47%, 12%) 0 15%, transparent 15.4%
+            circle at 58% 97%, var(--clr-blue-primary) 0 15%, transparent 15.4%
           ), 
           radial-gradient(
-            circle at 12% 10% , hsl(227, 41%, 19%) 0 17%, transparent 17.4%
+            circle at 12% 10% , var( --clr-blue-200) 0 17%, transparent 17.4%
           ), 
           radial-gradient(
-            circle at 12% 10%, hsl(199, 64%, 37%) 0 40%, transparent 40.2%
+            circle at 12% 10%, var(--clr-blue-100) 0 40%, transparent 40.2%
          ),
           radial-gradient(
-            circle at 20% max(78%, 350px), hsl(225, 47%, 12%) 0 7%, transparent 7.3%
+            circle at 20% max(78%, 350px), var(--clr-blue-primary) 0 7%, transparent 7.3%
           ), 
           
           
-            hsl(227, 41%, 19%);
+        var( --clr-blue-200);
         border-radius: 10px 0 0 10px;
 
         
