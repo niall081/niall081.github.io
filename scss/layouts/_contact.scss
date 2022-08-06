@@ -49,7 +49,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: hsl(227, 41%, 19%);
+        background-color: var( --clr-blue-200);
         background:
           radial-gradient(
             circle at 58% 97%, var(--clr-blue-primary) 0 15%, transparent 15.4%
@@ -65,7 +65,7 @@
           ), 
           
           
-            hsl(227, 41%, 19%);
+        var( --clr-blue-200);
         border-radius: 10px 0 0 10px;
 
         
