@@ -20,9 +20,9 @@ body {
   position: relative;
 }
 
-a {
+a,
+button {
   cursor: pointer;
-  color: var(--clr-white-primary);
 }
 
 img {
@@ -703,6 +703,12 @@ ul {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+.contact__link--copyrights {
+  font-size: 0.7rem;
+}
+.contact__link--copyrights:hover {
+  color: var(--clr-light-blue);
 }
 .contact__icon {
   width: 3rem;

@@ -86,6 +86,14 @@
         
     }
 
+    &__link--copyrights {
+        font-size: .7rem;
+
+        &:hover {
+            color: var(--clr-light-blue);
+        }
+    }
+
     &__icon {
         width: 3rem;
 
