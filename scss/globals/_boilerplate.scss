@@ -22,12 +22,14 @@ body {
     
 }
 
-a {
+a,
+button {
     cursor: pointer;
-    color: var(--clr-white-primary);
+    
 }
 
 img {
     width: 100%;
     display: block;
 }
+

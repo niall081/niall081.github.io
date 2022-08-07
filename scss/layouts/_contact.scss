@@ -86,6 +86,8 @@
         
     }
 
+   
+
     &__icon {
         width: 3rem;
 
@@ -103,6 +105,8 @@
         gap: 2rem;
 
     }
+
+    
 }
 
 .contact__form > input,
@@ -166,3 +170,10 @@ textarea:focus{
         display: flex;
     }
 }
+
+#contact__desktop-footer {
+    @include u.breakpoint-down(medium) {
+        display: none;
+    }
+}
+
