@@ -14,7 +14,7 @@ body {
   padding: 0;
   color: var(--clr-white-primary);
   font-family: var(--open-sans-font);
-  line-height: 1.5;
+  line-height: 1.4;
   letter-spacing: 0.9px;
   background-color: var(--clr-blue-primary);
   position: relative;
@@ -190,13 +190,11 @@ ul {
 .container-button {
   margin-top: 2.5rem;
 }
-
-.wrapper-button {
-  margin-top: 1rem;
-}
-@media (max-width: 48.9375em) {
-  .wrapper-button > .button {
-    padding: 0.5rem 0.7rem;
+@media (max-width: 37.9375em) {
+  .container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -225,6 +223,12 @@ ul {
 .link {
   color: var(--clr-light-blue);
   position: relative;
+}
+.link--resume {
+  color: var(--clr-light-blue);
+}
+.link--resume:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 48em) {
@@ -427,6 +431,9 @@ ul {
 .section__text--first {
   padding-top: 0;
 }
+.section__ul {
+  list-style: initial;
+}
 .section__list {
   padding-left: 0;
 }
@@ -487,7 +494,7 @@ ul {
 }
 @media (min-width: 95.5em) {
   .hero {
-    background-image: url("../../images/mod2-umberto-FewHpO4VC9Y-unsplash.jpg");
+    background-image: url("../../images/mod-umberto-FewHpO4VC9Y-unsplash.jpg");
   }
 }
 
@@ -553,6 +560,7 @@ ul {
 
 .timeline-container {
   border-left: 2px solid var(--clr-white-primary-blr);
+  margin-bottom: 5rem;
 }
 
 .row {
@@ -574,7 +582,7 @@ ul {
   }
 }
 .row__icon {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   margin-right: 1rem;
 }
 @media (max-width: 37.9375em) {
@@ -609,7 +617,10 @@ ul {
   border: none;
 }
 
-@media (max-width: 37.9375em) {
+.icons-container {
+  justify-self: end;
+}
+@media (max-width: 48.9375em) {
   .icons-container {
     display: flex;
     flex-direction: column;

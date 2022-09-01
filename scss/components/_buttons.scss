@@ -3,17 +3,14 @@
 
 .container-button {
     margin-top: 2.5rem;
-}
 
-.wrapper-button {
-    margin-top: 1rem;
-
-    &>.button {
-        @include u.breakpoint-down(medium){
-        padding: .5rem .7rem;
-        }
+    @include u.breakpoint-down(small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
+
 
 .button {
     font-size: .8rem;
@@ -42,6 +39,14 @@
 .link {
     color: var(--clr-light-blue);
     position: relative;
+
+    &--resume {
+        color: var(--clr-light-blue);
+    }
+
+    &--resume:hover {
+        text-decoration: underline;
+    }
     
 }
 
