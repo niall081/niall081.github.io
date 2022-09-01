@@ -1,4 +1,5 @@
-Work in progress.
+My personal website. 
 
-View at:
-https://niallbyrnes.com
+Designed and built by [Gloria Mancini](https://github.com/GlodallaLuna).
+
+View at: https://niallbyrnes.com
