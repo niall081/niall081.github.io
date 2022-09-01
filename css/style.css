@@ -225,13 +225,13 @@ ul {
   color: var(--clr-light-blue);
   position: relative;
 }
-.link--resume, .link--resume:visited,
-.link:visited--resume,
-.link:visited--resume:visited {
+
+.link--resume,
+.link--resume:visited {
   color: var(--clr-light-blue);
 }
-.link--resume:hover,
-.link:visited--resume:hover {
+
+.link--resume:hover {
   text-decoration: underline;
 }
 

@@ -40,16 +40,16 @@
 .link:visited {
     color: var(--clr-light-blue);
     position: relative;
+    
+}
 
-    &--resume,
-    &--resume:visited {
+.link--resume,
+.link--resume:visited {
         color: var(--clr-light-blue);
     }
 
-    &--resume:hover {
+.link--resume:hover {
         text-decoration: underline;
-    }
-    
 }
 
 
