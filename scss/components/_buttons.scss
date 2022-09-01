@@ -36,11 +36,13 @@
     
 }
 
-.link {
+.link,
+.link:visited {
     color: var(--clr-light-blue);
     position: relative;
 
-    &--resume {
+    &--resume,
+    &--resume:visited {
         color: var(--clr-light-blue);
     }
 
