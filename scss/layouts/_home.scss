@@ -5,7 +5,7 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url('../../images/mod3-compressed-umberto-FewHpO4VC9Y-unsplash.jpg');
+    background-image: url('/images/backgrounds/mod3-compressed-umberto-FewHpO4VC9Y-unsplash.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -15,7 +15,7 @@
    
 
     @include u.breakpoint(xlarge) {
-        background-image: url('../../images/mod-umberto-FewHpO4VC9Y-unsplash.jpg');  
+        background-image: url('/images/backgrounds/mod-umberto-FewHpO4VC9Y-unsplash.jpg');  
     }
 }
 
