@@ -30,10 +30,6 @@ img {
   display: block;
 }
 
-.contact__research-gate > i {
-  color: var(--clr-blue-200);
-}
-
 :root {
   --clr-blue-primary: hsl(225, 47%, 12%);
   --clr-white-primary: hsl(203, 37%, 93%);
@@ -288,7 +284,6 @@ ul {
   max-width: 25rem;
   margin: 0 auto;
   text-align: center;
-  padding: 0.7rem 1rem 0 1rem;
 }
 @media (max-height: 31.25em) {
   .socials {
@@ -298,16 +293,12 @@ ul {
 .socials__link {
   color: var(--clr-white-primary);
   font-size: 2.3rem;
-  padding: 1rem 0.7rem;
+  padding: 0;
   transition: 0.2s ease-in-out 0s;
-}
-@media (max-height: 31.25em) {
-  .socials__link {
-    padding: 0 0.5rem;
-  }
 }
 .socials__link > i {
   padding: 0;
+  margin: 1rem 0.5rem;
 }
 @media (max-height: 31.25em) {
   .socials__link > i {
