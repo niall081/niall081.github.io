@@ -278,6 +278,9 @@ ul {
   position: sticky;
   top: 100%;
 }
+.footer--home {
+  animation: fadeIn 3s;
+}
 
 .socials {
   border-top: 1px solid var(--clr-white-primary);
@@ -309,6 +312,14 @@ ul {
   transform: scale(1.15) translateY(-0.125em);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section {
   padding-top: 7rem;
 }
