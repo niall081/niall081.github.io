@@ -30,6 +30,16 @@ img {
   display: block;
 }
 
+.fa-researchgate {
+  color: var(--clr-blue-primary);
+  border-color: var(--fa-border-color);
+  background-color: var(--clr-white-primary);
+}
+
+.contact__research-gate > i {
+  color: var(--clr-blue-200);
+}
+
 :root {
   --clr-blue-primary: hsl(225, 47%, 12%);
   --clr-white-primary: hsl(203, 37%, 93%);
@@ -41,6 +51,7 @@ img {
   --clr-gray: hsl(240, 1%, 31%);
   --clr-blue-200: hsl(228, 40%, 19%);
   --clr-blue-100: hsl(199, 64%, 37%);
+  --fa-border-color: var(--clr-white-primary) ;
 }
 
 :root {
@@ -190,13 +201,6 @@ ul {
 .container-button {
   margin-top: 2.5rem;
 }
-@media (max-width: 37.9375em) {
-  .container-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 .button {
   font-size: 0.8rem;
@@ -263,100 +267,61 @@ ul {
   background-color: var(--clr-blue-primary);
 }
 
-.footer__icon {
-  width: 1.8rem;
-  transition: 0.2s ease-in-out 0s;
-  cursor: pointer;
-}
-@media (min-width: 37em) {
-  .footer__icon {
-    width: 2.1rem;
-  }
-}
-@media (max-height: 31.25em) {
-  .footer__icon {
-    width: 1.6rem;
-  }
-}
-.footer__icon--small {
-  width: 2rem;
-}
-@media (min-width: 37em) {
-  .footer__icon--small {
-    width: 2.9rem;
-  }
-}
-@media (max-height: 31.25em) {
-  .footer__icon--small {
-    width: 1.9rem;
-  }
-}
-
-.footer__icon:hover {
-  transform: scale(1.15) translateY(-0.125em);
-}
-
 .footer {
-  justify-content: center;
+  background-color: var(--clr-lilac-dark);
+  padding: 0.5rem;
+  margin-top: 3rem;
 }
-.footer__container--home {
-  position: fixed;
-  bottom: 5%;
-}
-.footer--section {
-  flex-direction: column;
-  align-items: center;
-  padding: 9rem 0 0.8rem 0;
-}
-
-.footer__container {
-  align-items: center;
+.footer__text {
+  font-family: var(--public-sans-font);
   text-align: center;
-  gap: 1rem;
+  padding: 0.025rem 1rem;
+  font-size: 0.9rem;
 }
-@media (max-height: 50em) {
-  .footer__container {
-    bottom: 7%;
-  }
-}
-.footer__container--text {
-  font-family: var(--raleway-font);
+.footer__text > a {
   color: var(--clr-white-primary);
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-  bottom: 1.5%;
 }
-@media (min-width: 37em) {
-  .footer__container--text {
-    font-size: 1.0123rem;
-  }
-}
-@media (max-height: 25rem) {
-  .footer__container--text {
-    font-size: 0.7rem;
-  }
-}
-.footer__container--text:hover {
+.footer__text > a:hover {
   color: var(--clr-light-blue);
 }
-.footer__container--section {
-  margin-bottom: 0.5rem;
+.footer--sticky {
+  position: sticky;
+  top: 100%;
 }
-.footer__container--section::after {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 1px;
-  bottom: 100px;
-  left: 0;
-  right: 0;
+
+.socials {
+  border-top: 1px solid var(--clr-white-primary);
+  max-width: 25rem;
   margin: 0 auto;
-  background: var(--clr-white-primary-blr);
+  text-align: center;
+  padding: 0.7rem 1rem 0 1rem;
 }
-@media (max-width: 48.9375em) {
-  .footer__container--section::after {
-    width: 250px;
+@media (max-height: 31.25em) {
+  .socials {
+    border: none;
   }
+}
+.socials__link {
+  color: var(--clr-white-primary);
+  font-size: 2.3rem;
+  padding: 1rem 0.7rem;
+  transition: 0.2s ease-in-out 0s;
+}
+@media (max-height: 31.25em) {
+  .socials__link {
+    padding: 0 0.5rem;
+  }
+}
+.socials__link > i {
+  padding: 0;
+}
+@media (max-height: 31.25em) {
+  .socials__link > i {
+    font-size: 1.6rem;
+  }
+}
+.socials__link > i:hover {
+  transform: scale(1.15) translateY(-0.125em);
 }
 
 .section {
@@ -788,7 +753,7 @@ textarea:focus {
 }
 @media (max-width: 48.9375em) {
   .footer--contact {
-    display: flex;
+    display: block;
   }
 }
 
@@ -796,6 +761,36 @@ textarea:focus {
   #contact__desktop-footer {
     display: none;
   }
+}
+
+.fa-contact {
+  font-size: 3.1rem;
+}
+
+.error-body {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  max-width: 55rem;
+  padding: 7rem 1rem 0 1rem;
+}
+.error-img > img {
+  width: 100%;
+}
+.error__paragraph {
+  font-family: var(--raleway-font);
+  font-size: 2rem;
+  text-align: center;
+}
+.error__button {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
