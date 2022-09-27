@@ -4,11 +4,11 @@
 .container-button {
     margin-top: 2.5rem;
 
-    @include u.breakpoint-down(small) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // @include u.breakpoint-down(small) {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 }
 
 

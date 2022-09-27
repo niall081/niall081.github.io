@@ -167,7 +167,7 @@ textarea:focus{
     margin-bottom: 0;
     display: none;
     @include u.breakpoint-down(medium) {
-        display: flex;
+        display: block;
     }
 }
 
@@ -175,5 +175,9 @@ textarea:focus{
     @include u.breakpoint-down(medium) {
         display: none;
     }
+}
+
+.fa-contact {
+    font-size: 3.1rem;
 }
 
