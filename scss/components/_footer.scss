@@ -37,8 +37,13 @@
     max-width: 25rem;
     margin: 0 auto;
     text-align: center;
+    padding-top: .5rem;
 
     @include u.breakpoint-down-height(medium){
+        border: none;
+    }
+
+    &--home {
         border: none;
     }
 
@@ -46,14 +51,14 @@
         color: var(--clr-white-primary);
         font-size: 2.3rem;
         padding: 0;
-        transition: .2s ease-in-out 0s;
-        
+        margin: 1rem .5rem;
         
     }
 
     &__link>i {
         padding: 0;
-        margin: 1rem .5rem;
+        transition: .2s ease-in-out 0s;
+        
         
         @include u.breakpoint-down-height(medium){
             font-size: 1.6rem; 

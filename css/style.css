@@ -287,21 +287,25 @@ ul {
   max-width: 25rem;
   margin: 0 auto;
   text-align: center;
+  padding-top: 0.5rem;
 }
 @media (max-height: 31.25em) {
   .socials {
     border: none;
   }
 }
+.socials--home {
+  border: none;
+}
 .socials__link {
   color: var(--clr-white-primary);
   font-size: 2.3rem;
   padding: 0;
-  transition: 0.2s ease-in-out 0s;
+  margin: 1rem 0.5rem;
 }
 .socials__link > i {
   padding: 0;
-  margin: 1rem 0.5rem;
+  transition: 0.2s ease-in-out 0s;
 }
 @media (max-height: 31.25em) {
   .socials__link > i {
